@@ -1,0 +1,41 @@
+body {
+	margin: 0;
+	height: 100vh;
+	display: flex;
+
+	overflow: hidden;
+}
+
+.center-text {
+	color: white;
+	font-size: 1.6rem;
+	font-family: Arial;
+	display: grid;
+	place-items: center;
+}
+
+.nav {
+	height: 15vh;
+	background-color: #373741;
+}
+
+.cont {
+	background-color: #1f1f1f;
+	height: 85vh;
+	width: 100vw;
+
+	display: grid;
+	place-items: center;
+
+	position: relative;
+}
+
+.draggable {
+	background-color: #808080;
+	width: 100px;
+	height: 100px;
+	/* position: 'absolute'; */
+	border-radius: 10px;
+
+	box-shadow: 0px 0px 10px 1px black;
+}
