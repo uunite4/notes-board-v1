@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;700&display=swap');
+
 body {
 	margin: 0;
 	height: 100vh;
@@ -6,7 +8,11 @@ body {
 	overflow: hidden;
 }
 
-.center-text {
+* {
+	font-family: 'Rubik', sans-serif;
+}
+
+/* .center-text {
 	color: white;
 	font-size: 1.6rem;
 	font-family: Arial;
@@ -34,8 +40,76 @@ body {
 	background-color: #808080;
 	width: 100px;
 	height: 100px;
-	/* position: 'absolute'; */
+	position: 'absolute';
 	border-radius: 10px;
 
 	box-shadow: 0px 0px 10px 1px black;
+} */
+
+.all {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
+
+nav {
+	width: 15vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+	align-items: center;
+
+	background-color: #252525;
+}
+
+nav h1 {
+	font-size: 2rem;
+	color: #d27685;
+}
+
+nav div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
+	align-items: center;
+
+	/* background-color: black; */
+	width: 100%;
+}
+
+nav div h2 {
+	font-size: 1.7rem;
+	color: #d27685;
+}
+
+.mini-note {
+	width: 100%;
+	padding: 1rem 0;
+	font-size: 1.7rem;
+	color: #9b9b9b;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.mini-note p {
+	margin: 0;
+}
+
+.mini-note span {
+	margin: 0;
+	transition: 200ms;
+}
+
+.mini-note:hover {
+	background-color: #3b3b3b;
+}
+
+.mini-note span:hover {
+	transform: scale(1.2);
+	color: #d27685;
 }
