@@ -10,6 +10,24 @@ body {
 
 * {
 	font-family: 'Rubik', sans-serif;
+	box-sizing: border-box;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+	background: #0c0c0c;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #a5dbe9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #0eacd4;
 }
 
 /* .center-text {
@@ -112,4 +130,51 @@ nav div h2 {
 .mini-note span:hover {
 	transform: scale(1.2);
 	color: #d27685;
+}
+
+.whiteboard {
+	background-image: radial-gradient(#474747 2px, #313131 2px);
+	background-size: 40px 40px;
+
+	width: 85vw;
+	height: 100vh;
+	position: relative;
+
+	overflow: hidden;
+}
+
+.note {
+	width: 12em;
+	height: 12em;
+	background-color: rgb(196, 24, 24);
+
+	padding: 0.5em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+
+	box-shadow: 0px 0px 10px 5px #252525;
+
+	position: absolute;
+}
+
+.note-input {
+	width: 100%;
+	font-size: 1.2rem;
+	border: none;
+	background-color: rgb(146, 17, 17);
+	padding: 0.3rem;
+
+	transition: 200ms;
+}
+
+.note-input:focus {
+	outline: none;
+	background-color: rgb(109, 12, 12);
+}
+
+.note-value {
+	flex: auto;
+	resize: none;
 }
